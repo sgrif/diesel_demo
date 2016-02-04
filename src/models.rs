@@ -5,3 +5,11 @@ pub struct Post {
     pub body: String,
     pub published: bool,
 }
+
+use super::schema::posts;
+
+#[insertable_into(posts)]
+pub struct NewPost<'a> {
+    pub title: &'a str,
+    pub body: &'a str,
+}
