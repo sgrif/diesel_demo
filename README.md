@@ -9,7 +9,7 @@ Quick start (Debian/Ubuntu)
 
 Install postgres:
 ```
-$ sudo apt-get install postgres
+$ sudo apt-get install postgresql
 ```
 
 Setup postgres:
